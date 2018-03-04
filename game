@@ -1,0 +1,177 @@
+/*
+_______oBBBBB8o______oBBBBBBB 
+_____o8BBBBBBBBBBB__BBBBBBBBB8________o88o,  		Author: CodeDainq
+___o8BBBBBB**8BBBB__BBBBBBBBBB_____oBBBBBBBo, 		Twitter: @CodeDainq0x
+__oBBBBBBB*___***___BBBBBBBBBB_____BBBBBBBBBBo, 	Linguage: C++
+_8BBBBBBBBBBooooo___*BBBBBBB8______*BB*_8BBBBBBo,       Version: 0,1
+_8BBBBBBBBBBBBBBBB8ooBBBBBBB8___________8BBBBBBB8, 	@Greetz: DepressionSec & FamiliaCibernetica - All Friends
+__*BBBBBBBBBBBBBBBBBBBBBBBBBB8_o88BB88BBBBBBBBBBBB,     "No need to copy, just create"
+____*BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB8, 
+______**8BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB*, 
+___________*BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB8*, 
+____________*BBBBBBBBBBBBBBBBBBBBBBBB8888**, 
+_____________BBBBBBBBBBBBBBBBBBBBBBB*, 
+_____________*BBBBBBBBBBBBBBBBBBBBB*, 
+______________*BBBBBBBBBBBBBBBBBB8, 
+_______________*BBBBBBBBBBBBBBBB*, 
+________________8BBBBBBBBBBBBBBB8, 
+_________________8BBBBBBBBBBBBBBBo, 
+__________________BBBBBBBBBBBBBBB8, 
+__________________BBBBBBBBBBBBBBBB,
+*/
+
+#include <iostream>
+#include <windows.h>
+
+using namespace std;
+
+int main()
+{
+	int money = 0;
+	char contador[6] = {' ' , 'd' , 'o' , 'l' , 'a' , '$'};
+	int opcoes; // Dinheiro
+	int opcao2; // Dinheiro
+	int opcao3; // Dinheiro
+	int opcao4; // Dinheiro
+	int opcao5; // Dinheiro
+	int opcao6; // Dinheiro
+	int opcao7; // Dinheiro
+	int elojas; //Escolher lojas
+	int loja1;
+	int loja2;
+	cout << "Voce tem atualmente 0 reais";
+	cout << "\nConsiga Dinheiro!\nPara conseguir, basta apenas escolher uma opcao para roubar.\nOpcoes:\n[1] Roubar um pobretao 2$\nOpcao: ";
+	cin >> opcoes;
+	if(opcoes == 1)
+	{
+		switch(opcoes)
+		{
+		case 1:
+			money = money + 2;
+			Sleep(500);
+			cout << money << contador;
+			break;
+		default:
+			cout << "Invalido";
+			break;
+		};
+	};
+	cout << "\nOpcoes: \n[1] Roubar um pobretao\n[2] Roubar uma bike\nOpcao:";
+	cin >> opcao2;
+	if(opcao2 == 2)
+	{
+		switch(opcao2)
+		{
+		case 2:
+			Sleep(1000);
+			money = money + 25;
+			cout << money << contador;
+			break;
+		case 1:
+			money++;
+			money++;
+			Sleep(500);
+			cout << money << contador;
+			break;
+		}
+	}
+	cout << "\nOpcoes: \n[1] Roubar um pobretao\n[2] Roubar uma bike\n[3] Vender galinha\nOpcao:";
+	cin >> opcao3;
+	if(opcao3 == 3)
+	{
+		switch(opcao3)
+		{
+		case 3:
+			Sleep(3000);
+			money = money + 50;
+			cout << money << contador;
+			break;
+		case 1:
+			money++;
+			money++;
+			Sleep(500);
+			cout << money << contador;
+			break;
+
+		}
+
+	}
+	cout << "\nOpcoes: \n[1] Roubar um pobretao\n[2] Roubar uma bike\n[3] Vender galinha\n[4] Roubar um celphone\nOpcao:";
+	cin >> opcao4;
+	if(opcao4 == 4)
+	{
+		switch(opcao4)
+		{
+		case 4:
+			Sleep(3000);
+			money = money + 150;
+			cout << money << contador;
+			break;
+
+		}
+	}
+	cout << "\nOpcoes: \n[1] Roubar um pobretao\n[2] Roubar uma bike\n[3] Vender galinha\n[4] Roubar um celphone\n[5] Roubar um mercado\nOpcao:";
+	cin >> opcao5;
+	if(opcao5 == 5)
+	{
+		switch(opcao5)
+		{
+		case 5:
+			Sleep(3000);
+			money = money + 600;
+			cout << money << contador;
+			break;
+		default:
+			cout << "Invalido";
+			break;
+		}
+	}
+	cout << "\nOpcoes: \n[1] Roubar um pobretao\n[2] Roubar uma bike\n[3] Vender galinha\n[4] Roubar um celphone\n[5] Roubar um mercado\n[6] Roubar um carro e vender ele\nOpcao:";
+	cin >> opcao6;
+	if(opcao6 == 6)
+	{
+		switch(opcao6)
+		{
+		case 6:
+			Sleep(3000);
+			money = money + 6700;
+			cout << money << contador;
+			break;
+		default:
+			cout << "Invalido";
+			break;
+
+		}
+	}
+	cout << "\nOpcoes: \n[1] Roubar um pobretao\n[2] Roubar uma bike\n[3] Vender galinha\n[4] Roubar um celphone\n[5] Roubar um mercado\n[6] Roubar um carro e vender ele\n[7] Roubar um banco\nOpcao:";
+	cin >> opcao7;
+	if(opcao7 == 7)
+	{
+		switch(opcao7)
+		{
+		case 7:
+			Sleep(8000);
+			money = money + 150000;
+			cout << money << contador;
+			cout << "\nVoce terminou todos os roubos, agora pode comprar o que quiser na loja.";
+			break;
+		default:
+			cout << "Invalido";
+			break;
+		}
+	}
+	cout << "\nSeu dinheiro: " << money << contador << "\nAbrindo a loja...";
+	cout << "\nVoce pode comprar todo conteudo da loja1 e da loja2, olhe abaixo o conteudo das lojas.\n 1- Ferramentas para se tornar um hacker\n 2- Ferramentas para se tornar um carder analfabeto";
+	cin >> elojas;
+	if(elojas == 1)
+	{
+		cout << "\nVoce comprou todo o conteudo da loja1, aguarde uma atualização do jogo para poder utilizar o conteudo.";
+
+	}
+	if(elojas == 2)
+	{
+		cout << "\nVoce comprou todo o conteudo da loja2, aguarde uma atualização do jogo para poder utilizar o conteudo.";
+	};
+	cout << "\nVoce finalizou o jogo!";
+	cin >> loja1;
+};
